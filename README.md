@@ -14,3 +14,7 @@ http://jie12366.xyz:86/test/?sentence=卧槽
 ## 模型训练
 基于LSTM的中文情绪识别 
 https://github.com/jie12366/sentiment_analysis
+
+## 相关博客
+[中文情绪识别api](http://jie12366.xyz:8081/#/users/11/articles/46)
+[基于LSTM的中文多分类情感分析](http://jie12366.xyz:8081/#/users/11/articles/35)

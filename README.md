@@ -5,7 +5,7 @@
 ## 示例
 输入
 ```
-http://jie12366.xyz:86/test/?sentence=%E5%8D%A7%E6%A7%BD
+http://jie12366.xyz:86/test/?sentence=卧槽
 ```
 输出
 ```

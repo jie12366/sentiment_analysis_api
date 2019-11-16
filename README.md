@@ -11,3 +11,6 @@ http://jie12366.xyz:86/test/?sentence=卧槽
 ```
 {"code": 200, "msg": "厌恶"}
 ```
+## 模型训练
+基于LSTM的中文情绪识别 
+https://github.com/jie12366/sentiment_analysis

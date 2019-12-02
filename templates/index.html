@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>情绪识别</title>
+        <style>
+            .title {
+                text-align: center;
+                width: 300px;
+                margin-left:300px;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-image: linear-gradient(90deg, #057748, #4b5cc4);
+            }
+            .text{
+                font-size: 20px;
+                border: #4B5CC4 1px solid;
+            }
+            .sentiment{
+                text-align: center;
+                font-size: 28px;
+               -webkit-background-clip: text;
+               -webkit-text-fill-color: transparent;
+               background-image: linear-gradient(90deg, #4b5cc4, #c93756);
+            }
+        </style>
+    </head>
+    <body>
+        <div style="margin-left: 30%;">
+            <h2 class="title">欢迎使用情绪识别</h2>
+            <section>
+                <textarea id="content" onblur="getSentiment()" class="text" rows="4" cols="60" placeholder="输入一句话试试" onpropertychange="if(this.scrollHeight>80) this.style.posHeight=this.scrollHeight+5"></textarea>
+            </section>
+            <section style="margin-left: 280px;margin-top: 30px;">
+                <span class="sentiment" id="sentiment"></span>
+            </section>
+        </div>
+        <script>
+            function getSentiment(){
+                var sentence = document.getElementById("content").value;
+                $.ajax({
+                    url: "/identify/",
+                    data: {'sentence': sentence},
+                    type: 'POST',
+                    dataType: 'json',
+                    success: function(res){
+                        console.log(res)
+                        if (res.code === 200){
+                            $("#sentiment").text(res.data)
+                        }
+                    }
+                })
+            }
+        </script>
+        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    </body>
+</html>

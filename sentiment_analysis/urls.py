@@ -20,4 +20,6 @@ from sentiment_analysis import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('test/', views.test_api, name="test"),
+    path('index/', views.to_index, name="index"),
+    path('identify/', views.identify, name="identify")
 ]

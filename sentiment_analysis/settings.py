@@ -25,7 +25,7 @@ SECRET_KEY = '#@1#)=@zmc)l^7^*49=6#z7we(9l+77k^vu+&35*$i+4)6-9sz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['jie12366.xyz']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

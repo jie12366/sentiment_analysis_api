@@ -3,14 +3,17 @@
 用Django搭建的Web接口，输入一句话，通过训练好的模型来预测识别这句话的情绪。
 
 ## 示例
+### 调用api
 输入
 ```
-http://jie12366.xyz:86/test/?sentence=卧槽
+http://114.116.230.62/test/?sentence=卧槽
 ```
 输出
 ```
 {"code": 200, "msg": "厌恶"}
 ```
+### 可视化界面
+![界面](https://img-blog.csdnimg.cn/20191203165825951.png)
 ## 模型训练
 基于LSTM的中文情绪识别 
 https://github.com/jie12366/sentiment_analysis
